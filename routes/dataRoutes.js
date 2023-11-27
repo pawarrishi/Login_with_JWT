@@ -4,5 +4,4 @@ const dataController = require("../controllers/dataController");
 
 router.get("/data", dataController.getData);
 
-
 module.exports = router;

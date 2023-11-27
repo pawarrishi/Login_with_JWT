@@ -5,7 +5,7 @@ const secretKey = "secretkey";
 
 const loginUser = async (req, res) => {
   const { uname, password } = req.body;
-  console.log("this is req body", req.body);
+  // console.log("this is req body", req.body);
   // Fetch user from the database
   const fetchQuery = "SELECT * FROM login_data WHERE uname=?";
   pool.execute(fetchQuery, [uname], async (err, result) => {
